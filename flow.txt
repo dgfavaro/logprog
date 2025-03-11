@@ -1,0 +1,13 @@
+versao1
+1- "obrigado" no fim do programa
+2- se media >=3 <6 exibir " substitutiva"
+3- se < 6 "reprovado, volte sempre"
+4- >=7 <=8 "parabéns 
+
+versao2
+5- considerar faltas, se > que 25& 	//considerar porcentagem já calculada
+
+versão 3
+6- se faltas > 25% exibir reprovado por falta; se não for reprovado por faltas, axibir aprovado/reprovado por media
+
+

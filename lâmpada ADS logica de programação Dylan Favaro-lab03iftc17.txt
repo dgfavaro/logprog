@@ -1,0 +1,300 @@
+Dylan Favaro ADS 1
+
+	ex1
+	//Crie um algoritmo de como trocar uma lâmpada
+
+PEGAR uma escada
+POSICIONAR a escada debaixo da luminária na qual contém a lâmpada a ser trocada
+BUSCAR uma lâmpada
+SUBIR na escada com a nova lâmpada
+TIRAR a lâmpada a ser trocada
+COLOCAR a nova lâmpada na luminária
+DESCER da escada com a lâmpada que foi trocada
+GUARDAR a escada
+
+
+	ex2
+	//Reescreva o mesmo programa, mas realizando as ações apenas SE necessário.
+	//condição: SE
+
+LIGAR interruptor
+SE a lâmpada não acender
+	DESLIGAR interruptor
+	PEGAR uma escada
+	POSICIONAR a escada debaixo da luminária na qual contém a lâmpada a ser trocada
+	BUSCAR uma lâmpada
+	SUBIR na escada com a nova lâmpada
+	TIRAR a lâmpada a ser trocada
+	COLOCAR a nova lâmpada na luminária
+	DESCER da escada com a lâmpada que foi trocada
+	GUARDAR a escada
+	LIGAR interruptor
+FIM SE			//se a condição "SE" for falsa, ignorar instruções do bloco "SE". TODO "SE" É FINALIZADO POR UM "FIMSE"
+DESLIGAR interruptor
+
+
+	ex3
+	//ex1 Trocar lâmpada incondicionalmente
+	//ex2 Buscar a escada somente se necessário
+
+	//ex3 A lâmpada que foi trocada pode não acender. Implementar esta condição no algoritmo
+	//usar 2 "SE"
+	//Se a lâmpada que foi trocada não acender,
+	  troque-a novamente
+  
+  
+LIGAR interruptor
+SE a lâmpada não acender
+	DESLIGAR interruptor
+	PEGAR uma escada
+	POSICIONAR a escada debaixo da luminária na qual contém a lâmpada a ser trocada
+	BUSCAR uma nova lâmpada
+	SUBIR na escada com a nova lâmpada
+	TIRAR a lâmpada a ser trocada
+	COLOCAR a nova lâmpada na luminária
+	DESCER da escada com a lâmpada que foi trocada
+	LIGAR interruptor
+	SE a lâmpada não acender
+		DESLIGAR interruptor
+		BUSCAR uma nova lâmpada						//não há necessidade de pegar escada de novo
+		SUBIR na escada com a nova lâmpada			
+		TIRAR a lâmpada a ser trocada
+		COLOCAR a nova lâmpada na luminária
+		DESCER da escada com a lâmpada que foi trocada
+		LIGAR interruptor
+	FIMSE
+	GUARDAR escada
+FIMSE
+DESLIGAR interruptor
+
+	ex4
+OPERADOR RELACIONAL
+	SE a média>=6 		//">=" operador relacional, relaciona uma coisa com a outra
+		EXIBIR "Aprovado"
+		
+	FIMSE
+	EXIBIR "OBG"
+	
+	5-> obg
+
+***************09/03/2023***************
+
+	//ex5 programa anterior mas se media=10 exibir "excelente"
+
+//solução errada que funciona:
+Se media==10
+	exibir "Excelente"
+SE a média>=6 			
+		EXIBIR "Aprovado"	
+	FIMSE
+	EXIBIR "OBG"
+	
+//solução correta 1 (Vicentini)
+SE [média]>=6
+	exibir "Aprovado"
+	SE media==10
+		exibir "Excelente"
+	FIMSE
+FIMSE
+exibir "Obrigado"
+
+//solução correta 2 (Layo)
+SE [média]>=6
+	SE media==10
+		exibir "Excelente"
+	FIMSE
+	exibir "Aprovado"
+FIMSE
+exibir "Obrigado"
+
+	//ex6: ex3 mas trocar a lâmpada uma outra vez
+
+LIGAR interruptor
+SE a lâmpada não acender
+	DESLIGAR interruptor
+	PEGAR uma escada
+	POSICIONAR a escada debaixo da luminária na qual contém a lâmpada a ser trocada
+	BUSCAR uma nova lâmpada
+	SUBIR na escada com a nova lâmpada
+	TIRAR a lâmpada a ser trocada
+	COLOCAR a nova lâmpada na luminária
+	DESCER da escada com a lâmpada que foi trocada
+	LIGAR interruptor
+	SE a lâmpada não acender
+		DESLIGAR interruptor
+		BUSCAR uma nova lâmpada						
+		SUBIR na escada com a nova lâmpada			
+		TIRAR a lâmpada a ser trocada
+		COLOCAR a nova lâmpada na luminária
+		DESCER da escada com a lâmpada que foi trocada
+		LIGAR interruptor
+			SE a lâmpada não acender
+				DESLIGAR interruptor
+				BUSCAR uma nova lâmpada						
+				SUBIR na escada com a nova lâmpada			
+				TIRAR a lâmpada a ser trocada
+				COLOCAR a nova lâmpada na luminária
+				DESCER da escada com a lâmpada que foi trocada
+				LIGAR interruptor
+			FIMSE
+	FIMSE
+	GUARDAR escada
+FIMSE
+DESLIGAR interruptor
+
+//comando ENQUANTO (WHILE)
+
+ENQUANTO [condição]	//instrução de repetição se a condição for verdadeira
+	instruções
+	instruções
+	instruções
+FIMENQUANTO		//apos fimenquanto, voltar para enquanto
+
+	//ex7 Continuar trocando lampada enquanto não acender
+
+	//SOLUÇÃO 1
+LIGAR interruptor
+SE a lâmpada não acender
+	DESLIGAR interruptor
+	PEGAR uma escada
+	POSICIONAR a escada debaixo da luminária na qual contém a lâmpada a ser trocada
+	BUSCAR uma nova lâmpada
+	SUBIR na escada com a nova lâmpada
+	TIRAR a lâmpada a ser trocada
+	COLOCAR a nova lâmpada na luminária
+	DESCER da escada com a lâmpada que foi trocada
+	LIGAR interruptor
+	ENQUANTO a lâmpada não acender
+		DESLIGAR interruptor
+		BUSCAR uma nova lâmpada						
+		SUBIR na escada com a nova lâmpada			
+		TIRAR a lâmpada a ser trocada
+		COLOCAR a nova lâmpada na luminária
+		DESCER da escada com a lâmpada que foi trocada
+		LIGAR interruptor
+	FIMENQUANTO
+	GUARDAR escada
+FIMSE
+DESLIGAR interruptor
+
+	//SOLUÇÃO 2
+LIGAR interruptor
+SE a lâmpada não acender
+	PEGAR uma escada
+	POSICIONAR a escada debaixo da luminária na qual contém a lâmpada a ser trocada
+	ENQUANTO a lâmpada não acender
+		DESLIGAR interruptor
+		BUSCAR uma nova lâmpada						
+		SUBIR na escada com a nova lâmpada			
+		TIRAR a lâmpada a ser trocada
+		COLOCAR a nova lâmpada na luminária
+		DESCER da escada com a lâmpada que foi trocada
+		LIGAR interruptor
+	FIMENQUANTO
+	GUARDAR escada
+FIMSE
+DESLIGAR interruptor
+
+	5. ex8 VERIFICAR todas as luminárias de uma sala e trocar as lampadas que não acenderem
+	- só há 1 interruptor
+	- só há 1 escada
+	- não se sabe quantas luminárias existem na sala
+	- não se sabe quantas lâmpadas tem cada luminária
+	- pode-se colocar SE dentro de SE e dentro de ENQUANTO assim como ENQUANTO dentro de SE e dentro de ENQUANTO
+
+LIGAR interruptor
+SE ao menos 1 lâmpada de pelo menos 1 luminária não acender
+	PEGAR uma escada
+		ENQUANTO ao menos 1 lâmpada daquela luminária não acender				//adicionado apenas condicional para satisfazer todas as luminárias
+			POSICIONAR a escada debaixo da luminária na qual contém a lâmpada a ser trocada
+			ENQUANTO pelo menos 1 lâmpada não acender
+				DESLIGAR interruptor
+				BUSCAR uma nova lâmpada						
+				SUBIR na escada com a nova lâmpada			
+				TIRAR a lâmpada a ser trocada
+				COLOCAR a nova lâmpada na luminária
+				DESCER da escada com a lâmpada que foi trocada
+				LIGAR interruptor
+			FIMENQUANTO
+		FIMENQUANTO										//adicionado para fechar primeiro ENQUANTO
+	GUARDAR escada
+FIMSE
+DESLIGAR interruptor
+
+**************************************************15/03/2023**************************************************
+
+
+	ex.9 Trocar todas as LÂMPADAS de todas as LUMINÁRIAS de todas as SALAS
+
+LIGAR interruptor
+SE alguma lâmpada de alguma luminária de alguma sala não acender
+	PEGAR uma escada
+	ENQUANTO alguma lâmpada de alguma luminária de alguma sala não acender			//adicionado condicional para satisfazer todas as salas
+		ENTRAR na sala com a escada							//movimentar a escada de uma sala para outra
+		ENQUANTO alguma lâmpada de alguma luminária não acender
+			POSICIONAR a escada debaixo da luminária na qual contém a lâmpada a ser trocada
+			ENQUANTO alguma lâmpada não acender
+				DESLIGAR interruptor
+				BUSCAR uma nova lâmpada						
+				SUBIR na escada com a nova lâmpada			
+				TIRAR a lâmpada a ser trocada
+				COLOCAR a nova lâmpada na luminária
+				DESCER da escada com a lâmpada que foi trocada
+				LIGAR interruptor
+			FIMENQUANTO
+		FIMENQUANTO
+		SAIR da sala com a escada
+	FIMENQUANTO					
+	GUARDAR escada
+FIMSE
+DESLIGAR interruptor
+
+
+	ex.10 EXIBIR NÚMEROS de 1 a 20 informando se ele é par informando a quantidade de pares
+	variável, valor na memória que PODE mudar
+	comandos: SE, ENQUANTO
+	número=1 	//atribuir valor 1 para a variável [número]
+	número++	//número+1
+
+{
+número=1
+pares=0
+
+
+ENQUANTO [número]<=20
+	SE [número] é par
+		EXIBIR número "é par"
+		[pares]++			//pares++ <equivale a> pares=pares+1
+	FIMSE
+	[número]++
+FIMENQUANTO
+EXIBIR pares
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

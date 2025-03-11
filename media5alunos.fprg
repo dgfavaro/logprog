@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="0040482311005"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-03 12:44:46 "/>
+        <attribute name="created" value="MDA0MDQ4MjMxMTAwNTtMQUIwM0lGVEMxNzsyMDIzLTA1LTAzOyIxMjoxMDozMiAiOzI1MzU="/>
+        <attribute name="edited" value="MDA0MDQ4MjMxMTAwNTtMQUIwM0lGVEMxNzsyMDIzLTA1LTAzOyIxMjo0NDo0NiAiOzE7MjY1NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, media, mediatotal" type="Real" array="False" size=""/>
+            <declare name="aluno, ciclo" type="Integer" array="False" size=""/>
+            <assign variable="mediatotal" expression="0"/>
+            <assign variable="aluno" expression="0"/>
+            <assign variable="ciclo" expression="1"/>
+            <while expression="ciclo==1">
+                <assign variable="aluno" expression="aluno+1"/>
+                <output expression="&quot;Escreva a primeira nota: &quot;" newline="True"/>
+                <input variable="nota1"/>
+                <output expression="&quot;Escreva a segunda nota: &quot;" newline="True"/>
+                <input variable="nota2"/>
+                <assign variable="media" expression="(nota1+nota2)/2"/>
+                <output expression="&quot;M&#233;dia aluno &quot;&amp;aluno" newline="True"/>
+                <output expression="media" newline="True"/>
+                <if expression="media&gt;=6">
+                    <then>
+                        <output expression="&quot;Aprovado&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Reprovado&quot;" newline="True"/>
+                    </else>
+                </if>
+                <assign variable="mediatotal" expression="mediatotal+media"/>
+                <output expression="&quot;Deseja continuar?&quot;" newline="True"/>
+                <input variable="ciclo"/>
+            </while>
+            <output expression="&quot;Media total dos alunos: &quot; &amp;mediatotal/aluno" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

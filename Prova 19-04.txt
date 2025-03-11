@@ -1,0 +1,42 @@
+0
+2
+5
+0
+0
+
+///////////////////////////////////////
+
+LER idade
+SE idade > 18
+	EXIBIR "pode votar"
+FIMSE
+SE idade <= 18
+	EXIBIR "pode tirar cnh"
+FIMSE
+SE idade >= 60
+	EXIBIR "idoso"
+FIMSE
+
+//////////////////////////////////////
+
+LER idade
+SE idade > 18
+	EXIBIR "pode votar"
+SENÃO
+	EXIBIR "pode tirar cnh"
+FIMSE
+SE idade >= 60
+	EXIBIR "idoso"
+FIMSE
+
+/////////////////////////////////////
+
+LER idade
+SE idade > 18
+	EXIBIR "pode votar"
+	SE idade >= 60
+		EXIBIR "idoso"
+	FIMSE
+SENÃO
+	EXIBIR "pode tirar cnh"
+FIMSE

@@ -1,0 +1,34 @@
+ARRUDA, Tiago
+EDSON, Mateus
+FAVARO, Dylan
+MORELI, João
+
+Fluxograma CAMPEONATO RESUMIDO:
+
+Participantes podem competir em 2 categorias
+categorias divididas em: idade e gênero, individual ou duplas
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Identificar quais modalidades fazer a inscrição e caso negativo, exibir a mensagem apropriada
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Categorias:
+
+INDIV MASC(independe de idade)
+INDIV FEM (independe de idade)
+
+INDIV 1 até 29 anos (independe de gênero)
+INDIV 2 de 30 até 40 (independe de gênero)
+INDIV 4 mais de 40 (independe de gênero)
+
+DUPLAS MISTAS (2 pessoas de qualquer idade de Gêneros diferentes)
+
+	perguntar se quer participar da categoria em dupla
+
+	DUPLAS MISTAS (2 pessoas de qualquer idade de Gêneros diferentes)
+	coletar dados do parceiro
+
+
+
+
+

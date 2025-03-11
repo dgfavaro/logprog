@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="0040482311005"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-26 12:54:40 "/>
+        <attribute name="created" value="MDA0MDQ4MjMxMTAwNTtMQUIwM0lGVEMxNzsyMDIzLTA0LTI2OyIxMjoxMDo0NyAiOzI1NDU="/>
+        <attribute name="edited" value="MDA0MDQ4MjMxMTAwNTtMQUIwM0lGVEMxNzsyMDIzLTA0LTI2OyIxMjo1NDo0MCAiOzM7MjY1Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <assign variable="vkm" expression="10"/>
+            <input variable="distancia"/>
+            <assign variable="porcentagem" expression="0"/>
+            <output expression="&quot;Insira sua idade: &quot;" newline="True"/>
+            <input variable="idade"/>
+            <if expression="idade&lt;60">
+                <then>
+                    <assign variable="valorbruto" expression="vkm*distancia"/>
+                    <input variable="dias"/>
+                    <if expression="dias&gt;7">
+                        <then>
+                            <assign variable="porcentagem" expression="porcentagem+0.1"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <input variable="cidades"/>
+                    <if expression="cidades&gt;5">
+                        <then>
+                            <assign variable="porcentagem" expression="porcentagem-0.1"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="distancia&gt;100">
+                        <then>
+                            <assign variable="porcentagem" expression="porcentagem+0.1"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <assign variable="valorliq" expression="valorbruto*(1+porcentagem)"/>
+                </then>
+                <else>
+                    <output expression="&quot;Passagem Gratuita&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

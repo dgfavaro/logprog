@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="0040482311005"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-26 12:10:24 "/>
+        <attribute name="created" value="MDA0MDQ4MjMxMTAwNTtMQUIwM0lGVEMxNzsyMDIzLTA0LTI2OyIxMjowMzoxOSAiOzI1NDY="/>
+        <attribute name="edited" value="MDA0MDQ4MjMxMTAwNTtMQUIwM0lGVEMxNzsyMDIzLTA0LTI2OyIxMjoxMDoyNCAiOzE7MjY0OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <assign variable="vfixo" expression="10"/>
+            <assign variable="vvar" expression="2"/>
+            <output expression="&quot;Insira a distancia percorrida: &quot;" newline="True"/>
+            <input variable="distancia"/>
+            <output expression="&quot;Esta corrida sera faita durante a fasta do peao? 0 ou 1&quot;" newline="True"/>
+            <input variable="fdp"/>
+            <if expression="fdp=1">
+                <then>
+                    <output expression="&quot;Valor Da Tarifa Alterado:(distancia*vvar+vfixo)*1.2&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Valor Da Tarifa:distancia*vvar+vfixo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

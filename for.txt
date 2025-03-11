@@ -1,0 +1,1 @@
+elaborar um programa em c utilizando o "for" para exibir numeros pares de 1 a 100 exibindo-os de 10 em 10

@@ -1,0 +1,6 @@
+
+1.a Gerar 10 numeros aleatorios entre 0 e 100 e armazena-los no vetor vendas, em seguida exibí-los;
+1.b Fazer a leitura do vetor carregado exibindo a somatória das vendas realizadas, bem como a correspondente média;
+1.c Fazer a leitura do vetor de vendas e exibir somente as vendas que forem maiores que a média, exibir quantas médias iguais ocorreram.
+
+

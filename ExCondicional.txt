@@ -1,0 +1,15 @@
+Ex1
+a. Elaborar um programa em C para calcular o valor a pagar ao motorista de aplicativo considerando que deverá ser pago um determinado valor minimo.
+b. Coletar o valor da tarifa a ser paga que irá depender se o horário de transporte ocorrerá durante a Festa do Peão de Americana.
+
+Ex2
+Elaborar o valor da passagem de trem na Europa considerando o seguinte: 
+a. Se a viagem durou mais de 1 semana, acrescentar 10% do valor da passagem.
+b. Se a viagem ocorreu entre mais de 5 cidades, descontar 10%.
+c. Se foram percorridos mais de 100km, acrescentar 10%.
+d. Se for estudante, pagar metade.
+	e. Se for idoso, não paga nada.
+f. Calcular valor da passagem em função dos km rodados.
+g. Se o valor líquido (final) da passagem for maior ou igual a 1000, oferecer a oportunidade de parcelamento em até 2x. Por outro lado, se o pagamento for a vista, dar um desconto de 10%.
+
+obs: coletar todos os valores reais

@@ -1,0 +1,5 @@
+1EX: a)calcula média aritmética de duas notas
+     b) calcule a média aritmética de duas notas de 5 alunos e calcular a média dos 5 alunos juntos
+     c) calcule a média aritmética de duas notas de X alunos e calcular a média dos X alunos juntos
+     d) calcule a média aritmética de duas notas de X alunos e calcular a média dos X alunos juntos podendo parar a qualquer momento
+     e)calcule a média aritmética de duas notas de X alunos e calcular a média dos X alunos juntos podendo parar a qualquer momento sem mostrar o resultado final

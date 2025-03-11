@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="0040482311005"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-05-03 12:10:25 "/>
+        <attribute name="created" value="MDA0MDQ4MjMxMTAwNTtMQUIwM0lGVEMxNzsyMDIzLTA1LTAzOyIxMjowNDo1MCAiOzI1Mzg="/>
+        <attribute name="edited" value="MDA0MDQ4MjMxMTAwNTtMQUIwM0lGVEMxNzsyMDIzLTA1LTAzOyIxMjoxMDoyNSAiOzE7MjY0NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1" type="Real" array="False" size=""/>
+            <declare name="nota2" type="Real" array="False" size=""/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <declare name="media" type="Real" array="False" size=""/>
+            <assign variable="media" expression="(nota1+nota2)/2"/>
+            <output expression="media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
